@@ -27,7 +27,7 @@ GAP = 4
 PADDING = 18
 HEADER = 52
 FOOTER = 30
-SNAKE_LENGTH = 68
+SNAKE_LENGTH = 50
 DURATION = 16
 
 
@@ -188,7 +188,7 @@ def render_svg(grid, snake_path):
 
   <path id="snakeRoute" d="{route}" fill="none" stroke="none" pathLength="1000"/>
 
-  <path d="{route}" fill="none" stroke="#EC4899" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+  <path d="{route}" fill="none" stroke="#ffb2cd" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
 
   <path d="{route}" fill="none" stroke="#EC4899" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" pathLength="1000" stroke-dasharray="{SNAKE_LENGTH} {1000 - SNAKE_LENGTH}">
     <animate
