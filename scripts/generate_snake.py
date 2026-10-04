@@ -33,9 +33,9 @@ FOOTER = 30
 
 # ---------- snake ----------
 SNAKE_SEGMENTS = 7        # total body blocks (head + tail) -> short snake
-SPEED = 70                # pixels per second
+SPEED = 130               # pixels per second (higher = faster)
 # head -> tail colours (bright lime to deep green, matches GitHub greens)
-SNAKE_COLORS = ["#C6FF7A", "#9BF26B", "#6FE05F", "#46CC55", "#2EAA49", "#1F8A3D", "#17692F"]
+SNAKE_COLORS = ["#E75480", "#FF69B4", "#FFB6C1", "#FFD1DC", " #F8C8DC", "#FFF0F5", "#FFFFFF"]
 
 # GitHub dark-theme greens
 LEVELS = [
@@ -153,7 +153,9 @@ def snake_body(duration, step_time):
         color = SNAKE_COLORS[min(i, len(SNAKE_COLORS) - 1)]
         size = 11.5 - i * 0.7          # body tapers towards the tail
         half = size / 2
-        begin = -(i * step_time)       # each block follows the one in front
+        # each block trails the one in front (negative begin = already running,
+        # so shift by a full loop minus the delay to place it BEHIND the head)
+        begin = -(duration - i * step_time)
         opacity = 1.0 - i * 0.07
 
         if i == 0:
