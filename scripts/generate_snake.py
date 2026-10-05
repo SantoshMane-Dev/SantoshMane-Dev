@@ -33,7 +33,7 @@ FOOTER = 30
 
 # ---------- snake ----------
 SNAKE_SEGMENTS = 7        # total body blocks (head + tail) -> short snake
-SPEED = 130               # pixels per second (higher = faster)
+SPEED = 180               # pixels per second (higher = faster)
 # head -> tail colours (bright lime to deep green, matches GitHub greens)
 SNAKE_COLORS = ["#E75480", "#FF69B4", "#FFB6C1", "#FFD1DC", " #F8C8DC", "#FFF0F5", "#FFFFFF"]
 
