@@ -149,9 +149,6 @@ Portfolio website for a studio and photography business, presenting their work a
 </td>
 </tr>
 </table>
-
-<img src="https://streak-stats.demolab.com?user=SantoshMane-Dev&hide_border=true&background=0D1117&stroke=8B5CF6&ring=EC4899&fire=F97316&currStreakLabel=EC4899&sideLabels=D1D5DB&dates=8B949E" width="100%" alt="GitHub streak statistics"/>
-
 ---
 
 ## 🐍 Contribution Heatmap
